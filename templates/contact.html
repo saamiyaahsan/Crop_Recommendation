@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    *{
+        margin : 0;
+        padding : 0;
+    }
+    
+    body{
+        background-color: rgb(20, 20, 44);
+        color : white;
+        font-family: 'Poppins' , sans-serif;
+    }
+    
+    nav{
+        display : flex;
+        justify-content : space-around;
+        align-items : center;
+        height : 80px;
+        background-color: rgb(21, 21, 69);
+    }
+    nav ul{
+        display : flex;
+        justify-content: center;
+    }
+    
+    nav ul li{
+        list-style : none;
+        margin : 0px 23px;
+    }
+    
+    nav .right ul li a{
+        color : white;
+        text-decoration: none;
+        font-size : 23px;
+    }
+    
+    nav .right ul li a:hover{
+        color : rgb(137, 137, 175);
+        text-decoration: underline;
+    }
+    
+    .left{
+        font-size: 1.7rem;
+    }
+
+    #contact-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 34px;
+    }
+
+</style>   
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">CoderGirls</div>
+            <div class="right">
+                <ul>
+                   <li><a href="{{ url_for('home') }}">Home</a></li> 
+                   <li><a href="{{ url_for('login') }}">Login</a></li>
+                   <li><a href="{{ url_for('register') }}">Register</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="contact-box">
+        
+    </div>
+</body>
+</html>
